@@ -10,10 +10,10 @@ const redis = require('redis');
 const { sendMail } = require('./services/mail.service');
 
 const app = express();
-const port = 3500;
+const port = process.env.PORT;
 
 let redisClient = redis.createClient({
-    host: 'localhost',
+    host: process.env.REDIS_HOST,
     database: 1,
 });
 

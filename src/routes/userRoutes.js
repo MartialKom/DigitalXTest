@@ -8,4 +8,8 @@ router.get("/landing", (req, res)=>{
     else res.redirect('/auth/login');
 })
 
+router.get("/", (req, res)=>{
+    res.redirect('/auth/login');
+})
+
 module.exports = router;
