@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martial KOM</title>
+    <link href="/pages/style-landing.css" rel="stylesheet">
+
+    <script>
+  
+  function logOut(event){
+    const confirmation = confirm('Êtes-vous sûr de vouloir vous déconnecter ?');
+    
+    if (confirmation) {
+        window.location.href = '/auth/logout';
+    } else {
+    }
+  }
+
+    </script>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>Martial</h1>
+            <h1>KOM</h1>
+        </div>
+        <ul>
+            <a href="https://github.com/MartialKom/" target="_blank"><li>GitHub</li></a>
+            <a href="https://www.linkedin.com/in/kom-kanmegne-martial-3bb9b022a/" target="_blank"><li>Linkedin</li></a>
+            <button id="btnDeconnexion" onclick="logOut(event)">Déconnexion</button>
+        </ul>
+    </header>
+    <main>
+        <aside>
+            <h2><span>Developpeur</span></h2>
+            <h2>Java/Spring</h2>
+            <p>
+                Analyste et développeur de systèmes avec de l'expérience en <b>Java</b>, <b>Spring Boot</b>, <b>Hibernate</b>, <b>PostgreSQL</b>, <b>MySQL</b>, et d'autres technologies. 
+                <br>
+                <br>
+                J'ai une plus grande affinité avec le développement back-end mais je suis très autididacte et j'arrive à m'adapter facilement, la preuve avec ce test Node JS. <b>PS: C'est la première fois que je fais du node js...</b>
+
+            </p>
+        </aside>
+        <article class="img">
+            <img src="../assets/dev-img.png" alt="dev">
+        </article>
+
+        <div class="content">  
+        </div>
+
+        <footer>
+            <div class="footer">
+                Digital X test 2024. Martial Kom
+            </div> 
+        </footer>
+    </main>
+</body>
+</html>
