@@ -13,11 +13,11 @@ const app = express();
 const port = process.env.PORT;
 
 let redisClient = redis.createClient({
-    host: "207.180.206.20",
+    host: process.env.REDIS_HOST,
     database: 0,
 });
 
-redisClient.connect().catch((err)=> console.error("Impossible de se connecter à redis"+err));
+redisClient.connect().catch((err)=> console.error("Impossible de se connecter à redis "+err));
 
 // Initialize store.
 let redisStore = new RedisStore({

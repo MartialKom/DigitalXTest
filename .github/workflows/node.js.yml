@@ -44,8 +44,6 @@ jobs:
         password: ${{ secrets.SERVER_SSH_KEY }}
         script: |
           cd /opt/digitalx
-          docker stop digitalxtest
-          docker rm digitalxtest
-          docker rmi -f test:V1
-          docker build -t test:V1 .
-          docker run -d --network dma -p 9000:3500 --name digitalxtest test:V1
+          sudo systemctl stop digitalx
+          sudo systemctl daemon reload
+          sudo systemctl start digitalx
