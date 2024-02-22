@@ -45,5 +45,6 @@ jobs:
         script: |
           cd /opt/digitalx
           sudo systemctl stop digitalx
-          sudo systemctl daemon reload
+          sudo systemctl daemon-reload
+          npm install
           sudo systemctl start digitalx
