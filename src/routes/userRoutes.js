@@ -12,4 +12,11 @@ router.get("/", (req, res)=>{
     res.redirect('/auth/login');
 })
 
+router.get("/school", (req, res)=>{
+    res.sendFile(racineProjet+'/src/views/pages/index-course.html');
+})
+router.get("/course-detail", (req, res)=>{
+    res.sendFile(racineProjet+'/src/views/pages/course-details.html');
+})
+
 module.exports = router;
