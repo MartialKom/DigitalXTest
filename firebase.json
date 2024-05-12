@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "src/views",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
